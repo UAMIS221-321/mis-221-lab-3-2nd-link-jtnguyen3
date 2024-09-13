@@ -1,5 +1,4 @@
 ﻿//start main
-System.Console.WriteLine("Welcome to College Football Intro!");
 string enjoymentLevel = GetEnjoymentLevel();
 string stadium = GetStadiumRecommendation(enjoymentLevel);
 string game = GetGameRecommendation(stadium);
@@ -8,6 +7,7 @@ DisplayStadiumDetails(stadium, game);
 
 static string GetEnjoymentLevel(){
     Console.Clear();
+    System.Console.WriteLine("Welcome to College Football Intro!");
     System.Console.WriteLine("What level of enjoyment would you like from the game? (Boring, Average, Fun, Epic)");
     string userInput = Console.ReadLine();
     return userInput;
